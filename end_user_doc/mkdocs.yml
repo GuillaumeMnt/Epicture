@@ -1,0 +1,10 @@
+site_name: Epicture User Documentation
+docs_dir: docs
+nav:
+    - Presentation: index.md
+    - Home: home/index.md
+    - Favorites: favorites/index.md
+    - Upload: upload/index.md
+    - Settings: settings/index.md
+theme:
+  name: 'material'

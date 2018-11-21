@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:background="@android:color/holo_green_light" android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp" android:layout_marginRight="0dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"/>
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_marginStart="80dp" android:layout_alignParentTop="true" android:layout_marginTop="65dp"
+            android:id="@+id/sectionRadioButton">
+        <TextView
+                android:text="section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/section" android:layout_weight="1"/>
+        <RadioButton
+                android:text="hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/hotRb" android:layout_weight="1"
+                android:checked="true"/>
+        <RadioButton
+                android:text="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/topRb" android:layout_weight="1"
+                android:checked="false"/>
+        <RadioButton
+                android:text="user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/userRb" android:layout_weight="1"
+                android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp" android:layout_alignParentTop="true" android:layout_marginTop="65dp"
+            android:id="@+id/sortRadioButton" android:layout_marginRight="8dp"
+            android:layout_toEndOf="@+id/sectionRadioButton" android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp">
+        <TextView
+                android:text="sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sort" android:layout_weight="1"
+                android:layout_alignTop="@+id/sortRadioButton" android:layout_alignEnd="@+id/sortRadioButton"/>
+        <RadioButton
+                android:text="viral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/viralRb" android:layout_weight="1"
+                android:checked="true"/>
+        <RadioButton
+                android:text="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/topSortRb" android:layout_weight="1"
+                android:checked="false"/>
+        <RadioButton
+                android:text="time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/timeRb" android:layout_weight="1"
+                android:checked="false"/>
+        <RadioButton
+                android:text="rising"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/risingRb" android:layout_weight="1"/>
+    </RadioGroup>
+    <Button
+            android:text="SAVE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton" android:layout_alignParentBottom="true" android:layout_marginBottom="8dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="147dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="149dp"/>
+    <Button
+            android:text="LOGOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoutButton" android:layout_alignParentBottom="true" android:layout_marginBottom="100dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="145dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="151dp"/>
+</RelativeLayout>

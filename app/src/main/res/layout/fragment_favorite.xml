@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light">
+
+    <Button
+            android:text="open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/openGalleryButton"
+            android:layout_marginBottom="63dp" android:layout_marginEnd="148dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="148dp"/>
+    <ImageView
+            android:layout_width="306dp"
+            android:layout_height="302dp" app:srcCompat="@mipmap/ic_unknown"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true" android:id="@+id/iv"
+            android:layout_marginTop="0dp" android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="0dp"
+            android:layout_marginStart="0dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
+            android:id="@+id/descriptionUpload"
+            android:layout_marginBottom="123dp" android:hint="description"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" android:id="@+id/titleUpload"
+            android:layout_marginBottom="193dp" android:hint="title"/>
+    <Button
+            android:text="send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" android:id="@+id/uploadPhoto" android:layout_marginBottom="8dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="148dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="148dp"/>
+</RelativeLayout>

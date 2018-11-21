@@ -1,0 +1,8 @@
+version: '3'
+services:
+  end_user_doc:
+    image: squidfunk/mkdocs-material
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./end_user_doc/:/docs
